@@ -19,7 +19,7 @@ angular.module('myApp', ['timber']);
 
 now you're ready to use it
 
-```
+```js
 // @ngInject
 function MyCoolCtrl(timber, $scope) {
   var log = timber('MyCoolCtrl');
