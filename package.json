@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "grunt": "0.x",
+    "grunt-contrib-uglify": "0.x"
+  }
+}
