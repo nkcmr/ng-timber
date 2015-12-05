@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
   grunt.initConfig({
     uglify: {
       dist: {
@@ -6,10 +6,9 @@ module.exports = function(grunt) {
         dest: 'dist/ng-timber.min.js'
       }
     }
-  });
+  })
 
-  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-uglify')
 
-  grunt.registerTask('default', ['uglify']);
-  grunt.registerTask('build', ['uglify']);
+  grunt.registerTask('default', ['uglify'])
 }
