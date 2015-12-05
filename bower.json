@@ -1,0 +1,24 @@
+{
+  "name": "timber",
+  "description": "a sane logger for angular.js",
+  "main": "index.js",
+  "authors": [
+    "Nick Comer"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "log",
+    "angular",
+    "console",
+    "timber"
+  ],
+  "homepage": "https://github.com/nkcmr/timber",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
