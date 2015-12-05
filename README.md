@@ -4,8 +4,6 @@ a sane logger for angular.js
 ### why?
 because you depend on the console to be informative and concise, not a tangled mess of randomly formatted console messages.
 
-this module provides logs that 
-
 ### installation
 **ng-timber** is available via npm and bower
 
