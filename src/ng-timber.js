@@ -2,6 +2,10 @@
   /* global angular, sessionStorage */
   'use strict'
 
+  angular.module('ng-timber', [])
+
+  // @deprecated
+  // will be removed in v2
   angular.module('timber', [])
 
   function timberProvider () {
@@ -76,5 +80,9 @@
     this.$get = timberFactory
   }
 
+  angular.module('ng-timber').provider('timber', timberProvider)
+
+  // @deprecated
+  // will be removed in v2
   angular.module('timber').provider('timber', timberProvider)
 })(this)
