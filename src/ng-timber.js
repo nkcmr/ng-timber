@@ -1,6 +1,8 @@
 (function (global) {
-  /* global angular, sessionStorage */
+  /* global sessionStorage */
   'use strict'
+
+  var angular = typeof require === 'function' ? require('angular') : global.angular
 
   angular.module('ng-timber', [])
 
