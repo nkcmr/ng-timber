@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/nkcmr/ng-timber/issues"
   },
-  "homepage": "https://github.com/nkcmr/ng-timber"
+  "homepage": "https://github.com/nkcmr/ng-timber",
+  "dependencies": {
+    "angular": "^1.4.8"
+  }
 }

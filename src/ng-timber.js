@@ -12,14 +12,14 @@
 
   function timberProvider () {
     var debugModules = (sessionStorage || {}).debug || '*'
-    var logLevel = 1
-    var levels = {
-      silly: 4,
-      debug: 3,
-      info: 2,
-      warn: 1,
-      error: 0
-    }
+    var levels = {}
+    this.LEVEL_SILLY = levels.silly = 4
+    this.LEVEL_DEBUG = levels.debug = 3
+    this.LEVEL_INFO = levels.info = 2
+    this.LEVEL_WARN = levels.warn = 1
+    this.LEVEL_ERROR = levels.error = 0
+
+    var logLevel = this.LEVEL_WARN
 
     // console doesn't actually have a silly level
     // so just make it an alias of `debug`
