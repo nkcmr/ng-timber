@@ -20,7 +20,7 @@ then just `require` it or load it via a script tag. whatever you environment dem
 don't forget to load it in your module definition
 
 ```js
-angular.module('myApp', ['timber'])
+angular.module('myApp', ['ng-timber'])
 // or
 angular.module('myApp', require('ng-timber'))
 ```
@@ -65,24 +65,16 @@ configuring timber is pretty easy too. to set the allowed log levels, just do th
 
 ```js
 angular.config(['timberProvider', function (timberProvider) {
-  timberProvider.setLevel(x)
+  timberProvider.set_level(x)
   
-  // where x is a number between 0 and 4
-  // 0 - errors only
-  // 1 - warn and error
-  // 2 - info, warn, error
-  // 3 - debug, info, warn, error
-  // 4 - all
+  // 'x' can be set to
+  // - error
+  // - warn
+  // - info
+  // - debug
+  // - silly
 }]);
 ```
-
-to only allow certain modules to log, type this into the developer console:
-
-```js
-sessionStorage.debug = 'ThisCtrl,ThatService'
-```
-
-to allow all again, just set that to `*`.
 
 ### licence
 ```
