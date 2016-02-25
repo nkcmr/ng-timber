@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/nkcmr/ng-timber",
   "dependencies": {
-    "angular": "^1.4.8"
+    "angular": "^1.4.8",
+    "modlog": "^0.1.0"
   }
 }
