@@ -28,6 +28,6 @@
   },
   "homepage": "https://github.com/nkcmr/ng-timber",
   "dependencies": {
-    "modlog": "^0.1.0"
+    "modlog": "^0.3.2"
   }
 }
