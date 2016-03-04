@@ -1,6 +1,6 @@
 {
   "name": "ng-timber",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "a sane logger for angular.js",
   "main": "index.js",
   "devDependencies": {
@@ -28,6 +28,6 @@
   },
   "homepage": "https://github.com/nkcmr/ng-timber",
   "dependencies": {
-    "modlog": "^0.3.2"
+    "modlog": "^0.3.3"
   }
 }
