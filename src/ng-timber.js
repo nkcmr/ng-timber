@@ -6,12 +6,17 @@
   function timber_provider () {
     var levels = ['error', 'warn', 'info', 'debug', 'silly']
     var log_level = 1
+    var timestamp_format
 
     this.set_level = function (_new_level) {
       if (typeof _new_level === 'string') {
         _new_level = Math.max(0, levels.indexOf(_new_level))
       }
       log_level = Math.max(0, Math.min(levels.length, _new_level))
+    }
+
+    this.set_timestamp_format = function (format) {
+      timestamp_format = format
     }
 
     function filter_log_level () {
@@ -33,7 +38,8 @@
     this.$get = function timber_provider () {
       return function (module_name) {
         return modlog(module_name, {
-          logger: _timber_log
+          logger: _timber_log,
+          format: timestamp_format
         })
       }
     }
