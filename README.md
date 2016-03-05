@@ -61,18 +61,16 @@ log.error('you should check if something is on fire or something');
 ```
 
 ### configuration
-configuring timber is pretty easy too. to set the allowed log levels, just do this:
+there are a few things you can configure with `ng-timber`
 
 ```js
 angular.config(['timberProvider', function (timberProvider) {
+  // set the level of logging. can be error, warn, info, debug or silly
   timberProvider.set_level(x)
   
-  // 'x' can be set to
-  // - error
-  // - warn
-  // - info
-  // - debug
-  // - silly
+  // set the format of the timestamp (see 
+  // https://secure.php.net/manual/en/function.date.php for formatting options)
+  timberProvider.set_timestamp_format('H:i:s.u')
 }]);
 ```
 
