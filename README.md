@@ -66,7 +66,7 @@ there are a few things you can configure with `ng-timber`
 ```js
 angular.config(['timberProvider', function (timberProvider) {
   // set the level of logging. can be error, warn, info, debug or silly
-  timberProvider.set_level(x)
+  timberProvider.set_level('error')
   
   // set the format of the timestamp (see 
   // https://secure.php.net/manual/en/function.date.php for formatting options)
